@@ -1,25 +1,28 @@
 import React, { useState } from "react";
 
-export const AddCategory = () => {
+export const AddCategory = ({ onNewCategory }) => {
   const [inputValue, setInputValue] = useState("");
 
   const onInputChange = ({ target }) => {
-    console.log(target.value);
     setInputValue(target.value);
   };
 
   const onSubmit = (event) => {
     event.preventDefault();
-    console.log(inputValue);
+    if (inputValue.trim().length <= 1) return;
+
+    onNewCategory(inputValue.trim());
+    setInputValue("");
   };
 
   return (
-    <form onSubmit={(event) => onSubmit(event)}>
+    <form onSubmit={onSubmit}>
       <input
-        type="text "
+        type="text"
         placeholder="Buscar Gif"
         value={inputValue}
         onChange={onInputChange}
+        onBlur={onInputChange} // Cambio aquí: onBlur en lugar de onChange
       />
     </form>
   );
