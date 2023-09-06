@@ -3,7 +3,7 @@ import { useState } from "react";
 import { AddCategory, GifGrid } from "./components";
 
 export const GifExpertApp = () => {
-  const [categories, setCategories] = useState(["paisajes"]);
+  const [categories, setCategories] = useState([]);
 
   const onAddCategory = (newCategory) => {
     if (categories.includes(newCategory)) return;
@@ -13,8 +13,8 @@ export const GifExpertApp = () => {
 
   return (
     <>
-      <h1>Hola mundo</h1>
-
+      <h1>By Braian Lucero</h1>
+      <h4>Busca lo que quieras </h4>
       <AddCategory onNewCategory={(value) => onAddCategory(value)} />
 
       {categories.map((category) => (
