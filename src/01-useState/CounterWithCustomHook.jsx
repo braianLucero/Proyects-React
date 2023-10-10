@@ -16,7 +16,6 @@ export const CounterWithCustomHook = () => {
         Reset
       </button>
       <button onClick={decrement} className="btn btn-primary">
-        {" "}
         -1
       </button>
     </>
