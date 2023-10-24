@@ -1,5 +1,6 @@
 import React from "react";
-import { CallbackHook } from "./06-memos/CallbackHook";
+import { Padre } from "./07-tarea-memo/07-tarea-memo/Padre";
+// import { CallbackHook } from "./06-memos/CallbackHook";
 // import { MemoHook } from "./06-memos/MemoHook";
 // import { Memorize } from "./06-memos/Memorize";
 // import { Layout } from "./05-useLayoutEffect/Layout";
@@ -10,5 +11,5 @@ import { CallbackHook } from "./06-memos/CallbackHook";
 // import { SimpleForm } from "./02-useEffect/SimpleForm";
 
 export const HooksApp = () => {
-  return <CallbackHook />;
+  return <Padre />;
 };
