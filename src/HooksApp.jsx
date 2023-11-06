@@ -1,4 +1,5 @@
 import React from "react";
+import "./08-useReducer/intro-Reducer";
 import { Padre } from "./07-tarea-memo/07-tarea-memo/Padre";
 // import { CallbackHook } from "./06-memos/CallbackHook";
 // import { MemoHook } from "./06-memos/MemoHook";
